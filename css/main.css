@@ -1,0 +1,114 @@
+/* reset */
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de body */
+
+body{
+    background-color: #ECEEF3;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* estilos de contenedor */
+
+.contenedor{
+    display: grid;
+    height: 100vh;
+}
+
+
+/* estilos del header */
+
+header{
+    background-color: rgb(122, 174, 157);
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header h1{
+    font-size: 1rem;
+}
+
+header nav ul{
+    display: flex;
+    gap: 0.5rem;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+/* estilos al main */
+
+main h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+main p{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* mq */
+
+@media screen and (min-width:600px) {
+
+    header h1{
+        font-size: 2rem;
+    }
+
+
+    main div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+        
+}
+
+
+
+@media screen and (min-width:800px) {
+
+    header h1{
+        font-size: 3rem;
+    }
+
+    main div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+        
+}
+
+main img{
+    width: 20%;
+    margin: 1rem;
+}
+
+/* estilos de footer */
+
+footer h3{
+    text-align: center;
+    background-color: rgb(122, 174, 157);
+    height: 3rem;
+}
+
+
