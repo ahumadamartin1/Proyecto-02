@@ -4,39 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de bt -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> 
     <!-- link de mi css -->
     <link rel="stylesheet" href="css/main.css">
     <title>Proyecto 02</title>
 </head>
 <body>
     <div class="contenedor">
-        <header>
-            <h1> Tienda De Cosméticos </h1>
-            <nav>
-                <ul>
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="../proyecto-02/pages/productos.html"> Productos </a></li>
-                <li> <a href="../proyecto-02/pages/sobrenosotros.html"> Sobre Nosotros</a></li>
-                <li> <a href="../proyecto-02/pages/contacto.html"> Contacto </a></li>
-                <li> <a href="../proyecto-02/pages/novedades.html"> Novedades </a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <h2> Conocenos </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vitae! Omnis tempore voluptate sapiente in quos numquam odio nostrum commodi hic accusantium. Quia, facere. Inventore animi excepturi et iste beatae?</p>
-            <div>
-            <img src="../proyecto-02/img/set-of-makeup-brushes-and-products-frame-vector.jpg" alt="imagenes de Cosméticos">
-            <img src="../proyecto-02/img/brochas.jpg" alt="imagenes de brochas">
+      <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TiendaCosméticos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
+        </nav>
+    </header>
+        
+        <main>
+          <h2 >Conocenos</h2> 
+          <br>
+          <div class="contenedor-img" id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="imagenes-carrusel" src="../proyecto-02/img/brochas.jpg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="imagenes-carrusel" src="../proyecto-02/img/cosméticos-283143.jpg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="imagenes-carrusel" src="../proyecto-02/img/set-of-makeup-brushes-and-products-frame-vector.jpg" alt="...">
+              </div>
+            </div>
+          </div>
         </main>
+      <br>
+      <br>
+      <br>
             
         <footer>
             <img src="../proyecto-02/img/logo-face.png" alt="logo de facebook">
             <img src="../proyecto-02/img/logo-insta.png" alt="logo de instagram">
             <h3> Todos los derechos reservados </h3>
         </footer>
-    </div>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
 </body>
 </html>
